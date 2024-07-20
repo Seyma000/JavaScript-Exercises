@@ -1,0 +1,57 @@
+body {
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.drum-kit {
+    text-align: center;
+    background-size: contain;
+
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.key {
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.key:active, .key.playing {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #3498db;
+}
+
+
+/* Mobil cihazlar için düzenleme*/
+@media (max-width: 768px) {
+    .key {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .key {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
